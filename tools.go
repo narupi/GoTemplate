@@ -16,11 +16,6 @@ func ReadStr() string {
 	return sc.Text()
 }
 
-func ReadLine() string {
-	sc.Scan()
-	return sc.Text()
-}
-
 func ReadInt() int {
 	i, e := strconv.Atoi(readStr())
 	if e != nil {
