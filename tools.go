@@ -17,7 +17,7 @@ func ReadStr() string {
 }
 
 func ReadInt() int {
-	i, e := strconv.Atoi(readStr())
+	i, e := strconv.Atoi(ReadStr())
 	if e != nil {
 		panic(e)
 	}
@@ -25,7 +25,7 @@ func ReadInt() int {
 }
 
 func ReadFloat() float64 {
-	f, e := strconv.ParseFloat(readStr(), 64)
+	f, e := strconv.ParseFloat(ReadStr(), 64)
 	if e != nil {
 		panic(e)
 	}
