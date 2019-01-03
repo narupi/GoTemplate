@@ -1,4 +1,4 @@
-package tools
+package template
 
 import (
 	"bufio"
@@ -30,4 +30,13 @@ func ReadFloat() float64 {
 		panic(e)
 	}
 	return f
+}
+
+func SplitStr(str string, s string) {
+	return strings.Split(str, s)
+}
+
+func DeleteElement(data []int, idx int) []int {
+	data = append(data[:idx], a[idx+1:]...)
+	return data
 }
